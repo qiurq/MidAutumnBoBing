@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/bg_game"
+    android:orientation="vertical" >
+    <TextView 
+        style="@style/WH_wrap_content"
+        android:text="@string/feedBack"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/edt_feedbackText"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:hint="@string/feedbackText"
+        android:background="@color/white_bg"
+        android:gravity="top"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp" />
+    
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        style="@style/WH_wrap_content"
+        android:background="@drawable/button_selector"
+        android:textColor="@color/miHuang"
+        android:textSize="20sp"
+        android:text="@string/send"/>
+    
+
+</LinearLayout>

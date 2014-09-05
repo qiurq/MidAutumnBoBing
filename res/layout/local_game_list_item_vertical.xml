@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WH_match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/WH_wrap_content"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/txt_localGameListItemTitle"
+            style="@style/WH_wrap_content"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/WH_wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imgV_localGameListItemDice1"
+            style="@style/WH_wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imgV_localGameListItemDice2"
+            style="@style/WH_wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imgV_localGameListItemDice3"
+            style="@style/WH_wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imgV_localGameListItemDice4"
+            style="@style/WH_wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imgV_localGameListItemDice5"
+            style="@style/WH_wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imgV_localGameListItemDice6"
+            style="@style/WH_wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

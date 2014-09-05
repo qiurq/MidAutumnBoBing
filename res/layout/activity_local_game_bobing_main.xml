@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/WH_match_parent"
+    android:background="@drawable/bg_game" >
+
+    <RelativeLayout
+        android:id="@+id/lay_addAdvertisement"
+        style="@style/WH_match_parent___wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/WH_wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="25dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/addAdvertisement"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/img_close"
+            style="@style/WH_wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/close_btn_src_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay"
+        style="@style/WH_match_parent___wrap_content"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/widget_bobing_bowl"
+            style="@style/WH_wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/bobing_bowl" />
+
+        <ImageView
+            android:id="@+id/img_diceAnimationArea"
+            android:layout_width="180dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@id/widget_bobing_bowl"
+            android:src="@drawable/shake"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/lay_showDiceArea"
+            android:layout_width="180dp"
+            android:layout_height="130dp"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/WH_match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/lay_dice1"
+                    style="@style/WH_match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/lay_dice2"
+                    style="@style/WH_match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/lay_dice3"
+                    style="@style/WH_match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/WH_match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/lay_dice4"
+                    style="@style/WH_match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/lay_dice5"
+                    style="@style/WH_match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/lay_dice6"
+                    style="@style/WH_match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/lay_listV"
+        style="@style/WH_match_parent___wrap_content"
+        android:layout_above="@id/lay"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <com.banker.framework.utils.HorizontalListView
+            android:id="@+id/localGameListV"
+            style="@style/WH_match_parent"
+            android:visibility="invisible" />
+        
+        <ImageView 
+            android:id="@+id/img_shake"
+            style="@style/WH_match_parent"
+            android:src="@drawable/shake"/>
+    </RelativeLayout>
+
+    
+     <RelativeLayout
+        style="@style/WH_match_parent"
+        android:layout_below="@id/lay"
+        android:layout_above="@id/lay_addAdvertisement" >
+
+        <Button
+            android:id="@+id/btn_start"
+            style="@style/WH_wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_selector"
+            android:text="@string/start"
+            android:textColor="@color/miHuang" />
+    </RelativeLayout>
+
+</RelativeLayout>

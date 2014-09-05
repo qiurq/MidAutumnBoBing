@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MidAutumnBoBing</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="MidAutumnBoBing">中秋节博饼</string>
+
+    <!-- 公用 -->
+    <string name="DialogMsgNoDatas">未找到符合查询条件的%s&#8230;</string>
+    <string name="query">查询</string>
+    <string name="label_update">更新于: </string>
+    <string name="label_last_time">1分钟前</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="download">下载</string>
+    <string name="pull_down_for_refresh">下拉刷新</string>
+    <string name="release_for_refresh">松开刷新</string>
+    <string name="refreshing">正在刷新&#8230;</string>
+    <string name="pull_up_for_more">上拉更多</string>
+    <string name="release_for_more">松开加载</string>
+    <string name="loading">正在加载&#8230;</string>
+    <string name="click_for_more">点击加载更多</string>
+    <string name="ButtonTextYes">是</string>
+    <string name="ButtonTextOk">好</string>
+    <string name="ButtonTextNo">否</string>
+    <string name="ButtonTextDone">完成</string>
+    <string name="TipInfo">提示信息</string>
+    <string name="start">开始</string>
+    <string name="back"> 返回</string>
+    <string name="explain">说明</string>
+    <string name="help">帮助</string>
+    <string name="startGame">开始游戏</string>
+    <string name="isBack">是否退出</string>
+    <string name="backMessage">退出后您的记录将被清除</string>
+    <string name="addAdvertisement">厦门蚌壳软件科技有限公司!   厦门蚌壳软件科技有限公司!</string>
+    <string name="banker">厦门蚌壳软件科技</string>
+    <string name="resultList">战绩</string>
+
+    <!-- 模块 -->
+    <string name="networking">联网游戏</string>
+    <string name="intoRoom">加入房间</string>
+    <string name="localGame">单机游戏</string>
+    <string name="more">更多</string>
+
+    <!-- CheckBox -->
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+
+    <!-- 主页 -->
+    <string name="midAutumnBoBint">中秋博饼</string>
+    <string name="selectDiceQuantity">选择骰子数量：</string>
+    <string name="dice">骰子</string>
+    <string name="shakeDice">摇骰子</string>
+    <string name="bobing">博饼</string>
+    <string name="selectDiceNum">请选择骰子个数</string>
+    <string name="play">玩一把</string>
+
+    <!-- 更多 -->
+    <string name="update">版本更新</string>
+    <string name="useHelp">使用帮助</string>
+    <string name="share">分享</string>
+    <string name="feedBack">意见反馈</string>
+    <string name="grade">喜欢，为我们评分</string>
+    <string name="softwareRecommend">软件推荐</string>
+    <string name="XiaMenBanker">厦门蚌壳科技有限公司</string>
+    
+    <string name="send">发送</string>
+    <string name="feedbackText">请输入您的反馈意见</string>
+
+    
+    <string name="loadMessage">正在玩命加载中...</string>
+</resources>

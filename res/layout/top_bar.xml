@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WH_match_parent___wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/WH_match_parent___wrap_content"
+        android:background="@drawable/top_bar" >
+
+        <Button
+            android:id="@+id/btn_topBack"
+            android:layout_width="45dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_top_back_selector"
+            android:text="@string/back"
+            android:textColor="@color/miHuang"
+            android:textSize="12sp" />
+        
+        <TextView 
+            android:id="@+id/txtV_topTitle"
+            style="@style/WH_wrap_content"
+            android:text="@string/banker"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/miHuang"/>
+
+        <Button
+            android:id="@+id/btn_topRight"
+            android:layout_width="45dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_top_right_selector"
+            android:text="@string/help"
+            android:textColor="@color/miHuang"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

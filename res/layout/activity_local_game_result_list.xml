@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WH_match_parent"
+    android:background="@drawable/bg_game"
+    android:orientation="vertical" >
+    
+    <ListView
+        android:id="@+id/listViewActivity_listV"
+        style="@style/WH_match_parent"
+        android:divider="@null"
+        android:dividerHeight="15dp"
+        android:padding="20dp"
+        android:scrollbars="none" />
+
+</LinearLayout>

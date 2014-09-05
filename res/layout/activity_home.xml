@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WH_match_parent"
+    android:background="@drawable/bg_home"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/lay_RadioButtonCount"
+        style="@style/WH_wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/RadioButton_1"
+            android:text="@string/one"
+            android:textColor="@color/miHuang" />
+
+        <RadioButton
+            android:id="@+id/RadioButton_2"
+            android:text="@string/two"
+            android:textColor="@color/miHuang" />
+
+        <RadioButton
+            android:id="@+id/RadioButton_3"
+            android:text="@string/three"
+            android:textColor="@color/miHuang" />
+
+        <RadioButton
+            android:id="@+id/RadioButton_4"
+            android:text="@string/four"
+            android:textColor="@color/miHuang" />
+
+        <RadioButton
+            android:id="@+id/RadioButton_5"
+            android:text="@string/five"
+            android:textColor="@color/miHuang" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtV_selectDiceQuantity"
+        style="@style/WH_wrap_content"
+        android:layout_above="@id/lay_RadioButtonCount"
+        android:layout_alignLeft="@id/lay_RadioButtonCount"
+        android:text="@string/selectDiceQuantity" />
+
+    <RadioGroup
+        android:id="@+id/lay_RadioButtonType"
+        style="@style/WH_match_parent___wrap_content"
+        android:layout_above="@id/txtV_selectDiceQuantity"
+        android:layout_alignLeft="@id/lay_RadioButtonCount"
+        android:layout_alignRight="@id/lay_RadioButtonCount"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/RadioButton_dice"
+            android:layout_weight="1"
+            android:text="@string/dice"
+            android:textColor="@color/miHuang" />
+
+        <RadioButton
+            android:id="@+id/RadioButton_bobing"
+            android:layout_weight="1"
+            android:text="@string/bobing"
+            android:textColor="@color/miHuang" />
+    </RadioGroup>
+
+    <RelativeLayout
+        style="@style/WH_match_parent"
+        android:layout_below="@id/lay_RadioButtonCount"
+        android:layout_alignLeft="@id/lay_RadioButtonCount"
+        android:layout_alignRight="@id/lay_RadioButtonCount"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btn_createRoom"
+            style="@style/WH_wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_selector"
+            android:text="@string/networking"
+            android:textColor="@color/miHuang"
+            android:visibility="gone" />
+        
+        <Button
+            android:id="@+id/btn_localGame"
+            style="@style/WH_wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_selector"
+            android:text="@string/startGame"
+            android:textColor="@color/miHuang" />
+        <Button
+            android:id="@+id/btn_more"
+            style="@style/WH_wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/btn_localGame"
+            android:layout_alignLeft="@id/btn_localGame"
+            android:layout_alignRight="@id/btn_localGame"
+            android:background="@drawable/button_selector"
+            android:text="@string/more"
+            android:textColor="@color/miHuang" />
+
+        <Button
+            android:id="@+id/btn_intoRoom"
+            style="@style/WH_wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_selector"
+            android:text="@string/intoRoom"
+            android:textColor="@color/miHuang"
+            android:visibility="invisible" />
+
+        
+    </RelativeLayout>
+<!-- 
+    <RelativeLayout
+        style="@style/WH_match_parent"
+        android:layout_above="@id/lay_RadioButtonType"
+        android:layout_alignLeft="@id/lay_RadioButtonType"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            android:id="@+id/txtV_midAutumnBoBint"
+            style="@style/WH_wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/midAutumnBoBint"
+            android:textColor="@color/miHuang"
+            android:textSize="30sp" />
+
+        <ImageView
+            style="@style/WH_wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/txtV_midAutumnBoBint"
+            android:src="@drawable/moon" />
+    </RelativeLayout>
+ -->
+</RelativeLayout>

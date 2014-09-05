@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WH_match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+    
+    <TextView 
+        android:id="@+id/txt_localGameListItemActivityTitle"
+        style="@style/WH_wrap_content"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:text="001" />
+    
+    <ImageView 
+        android:id="@+id/imgV_localGameListItemActivityDice1"
+        style="@style/WH_wrap_content"
+        android:layout_weight="1"/>
+    <ImageView 
+        android:id="@+id/imgV_localGameListItemActivityDice2"
+        style="@style/WH_wrap_content"
+        android:layout_weight="1"/>
+    <ImageView 
+        android:id="@+id/imgV_localGameListItemActivityDice3"
+        style="@style/WH_wrap_content"
+        android:layout_weight="1"/>
+    <ImageView 
+        android:id="@+id/imgV_localGameListItemActivityDice4"
+        style="@style/WH_wrap_content"
+        android:layout_weight="1"/>
+    <ImageView 
+        android:id="@+id/imgV_localGameListItemActivityDice5"
+        style="@style/WH_wrap_content"
+        android:layout_weight="1"/>
+    <ImageView 
+        android:id="@+id/imgV_localGameListItemActivityDice6"
+        style="@style/WH_wrap_content"
+        android:layout_weight="1"/>
+
+</LinearLayout>

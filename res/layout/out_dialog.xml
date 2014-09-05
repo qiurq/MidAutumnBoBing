@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WH_wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@drawable/bg_dialog"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/WH_wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtV_dialogText"
+            style="@style/WH_wrap_content"
+            android:text="@string/backMessage"
+            android:textColor="@color/miHuang"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/WH_match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_dialogConfirm"
+            style="@style/WH_wrap_content"
+            android:background="@drawable/button_selector"
+            android:text="@string/confirm"
+            android:textColor="@color/miHuang"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_dialogCancel"
+            style="@style/WH_wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/button_selector"
+            android:text="@string/cancel"
+            android:textColor="@color/miHuang"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

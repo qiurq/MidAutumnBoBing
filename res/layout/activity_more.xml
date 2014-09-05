@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WH_match_parent"
+    android:background="@color/gray"
+    android:scrollbars="none"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/WH_match_parent___wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical" >
+
+        <!-- 版本更新 -->
+        <LinearLayout
+            android:id="@+id/linLay_update"
+            style="@style/WH_match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/more_item_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/update" />
+
+            <TextView
+                style="@style/WH_wrap_content"
+                android:text="@string/update"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+        
+        <!-- 使用帮助 -->
+        <LinearLayout
+            android:id="@+id/linLay_useHelp"
+            style="@style/WH_match_parent"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/more_item_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/help" />
+
+            <TextView
+                style="@style/WH_wrap_content"
+                android:text="@string/useHelp"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+        
+        <!-- 分享 -->
+        <LinearLayout
+            android:id="@+id/linLay_share"
+            style="@style/WH_match_parent"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/more_item_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/shard" />
+
+            <TextView
+                style="@style/WH_wrap_content"
+                android:text="@string/share"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+        
+        <!-- 意见反馈 -->
+        <LinearLayout
+            android:id="@+id/linlay_feedBack"
+            style="@style/WH_match_parent"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/more_item_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/feedback" />
+
+            <TextView
+                style="@style/WH_wrap_content"
+                android:text="@string/feedBack"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+        
+        <!-- 评分 -->
+        <LinearLayout
+            android:id="@+id/linLay_grade"
+            style="@style/WH_match_parent"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/more_item_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/grade" />
+
+            <TextView
+                style="@style/WH_wrap_content"
+                android:text="@string/grade"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+        
+        <!-- 软件推荐 -->
+        <LinearLayout
+            android:id="@+id/linLay_softwareRecommend"
+            style="@style/WH_match_parent"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/more_item_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/recommend" />
+
+            <TextView
+                style="@style/WH_wrap_content"
+                android:text="@string/softwareRecommend"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+        
+        <!-- 厦门蚌壳 -->
+        <LinearLayout
+            android:id="@+id/linLay_XiaMenBanker"
+            style="@style/WH_match_parent"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/more_item_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="0dp" >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:padding="10dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                style="@style/WH_wrap_content"
+                android:text="@string/XiaMenBanker"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+        
+    </LinearLayout>
+</ScrollView>

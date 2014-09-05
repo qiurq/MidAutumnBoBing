@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.banker"
+    android:versionCode="2"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:name="com.banker.framework.application.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/MidAutumnBoBing"
+        android:theme="@style/AppTheme" >
+
+        <!-- 应用开启页 -->
+        <activity
+            android:name="com.banker.home.activity.LoadingActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 主页 -->
+        <activity android:name="com.banker.home.activity.HomeActivity" />
+
+        <!-- 联网游戏 -->
+        <activity android:name="com.banker.create_room.activity.NetworkingGameActivity" />
+
+        <!-- 单机游戏 -->
+        <activity android:name="com.banker.local_game.dice.activity.LocalGameDiceActivity" />
+        <activity android:name="com.banker.local_game.dice.activity.LocalGameListViewActivity" />
+        <activity android:name="com.banker.local_game.bobing.activity.LocalGameBobingActivity" />
+        <activity android:name="com.banker.local_game.bobing.activity.LocalGameBobingListViewActivity" />
+
+        <!-- 帮助 -->
+        <activity android:name="com.banker.more.activity.HelpActivity" />
+        <!-- 意见反馈 -->
+		<activity android:name="com.banker.more.activity.FeedBackActivity" />
+        <!-- 更多 -->
+        <activity android:name="com.banker.more.activity.MoreActivity" />
+        
+        <activity android:name="com.banker.more.activity.RecommendActivity" />
+
+        <!-- 微信分享回调 -->
+<!-- 
+        <activity
+            android:name="com.banker.framework.activity.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+ -->
+        <!-- 易信分享回调 -->
+        <activity
+            android:name="com.banker.framework.activity.YXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

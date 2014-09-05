@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WH_wrap_content"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/imgV_appLogo"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tv_appTitle"
+        style="@style/WH_wrap_content"
+        android:layout_alignTop="@id/imgV_appLogo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/imgV_appLogo"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tv_appSubtitle"
+        style="@style/WH_wrap_content"
+        android:layout_alignBottom="@id/imgV_appLogo"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imgV_appLogo"
+        android:ellipsize="end"
+        android:ems="9"
+        android:singleLine="true"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btn_download"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:focusable="false"
+        android:clickable="false"
+        android:background="@drawable/selector_btn_download"
+        android:text="@string/download"
+        android:textSize="15sp" />
+
+</RelativeLayout>

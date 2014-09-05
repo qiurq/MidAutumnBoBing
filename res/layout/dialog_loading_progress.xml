@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WH_wrap_content"
+    android:background="@drawable/dialog_loading_progress_bg"
+    android:gravity="center" >
+
+    <ProgressBar
+        style="@style/WH_wrap_content"
+        android:layout_gravity="center_horizontal" >
+    </ProgressBar>
+
+</LinearLayout>

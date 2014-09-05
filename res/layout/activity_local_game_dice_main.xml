@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/WH_match_parent"
+    android:background="@drawable/bg_game" >
+
+    <RelativeLayout
+        android:id="@+id/lay_bottom_advertisement"
+        android:layout_alignParentBottom="true"
+        style="@style/WH_match_parent___wrap_content"
+        android:gravity="center_vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+             android:ellipsize="marquee"
+             android:focusable="true"
+             android:focusableInTouchMode="true"
+             android:scrollHorizontally="true"
+             android:marqueeRepeatLimit="marquee_forever"
+            android:text="@string/addAdvertisement"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/close_btn_src_normal"
+            style="@style/WH_wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/close_btn_src_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/WH_match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/lay_bottom_advertisement" >
+
+        <FrameLayout
+            android:id="@+id/lay_diceBase"
+            style="@style/WH_match_parent___wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true" >
+
+            <ImageView
+                style="@style/WH_match_parent___wrap_content"
+                android:src="@drawable/dice_base" />
+
+            <ImageView
+                style="@style/WH_wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/roll_arean" />
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    style="@style/WH_match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/l1"
+                        style="@style/WH_match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/l2"
+                        style="@style/WH_match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/l3"
+                        style="@style/WH_match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_dice456"
+                    style="@style/WH_match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/l4"
+                        style="@style/WH_match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/l5"
+                        style="@style/WH_match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/l6"
+                        style="@style/WH_match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/img_cup"
+            style="@style/WH_match_parent___wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/dice_cup" />
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_selector"
+            android:text="@string/start" />
+
+        
+
+        <RelativeLayout
+            android:id="@+id/lay_listV"
+            style="@style/WH_match_parent___wrap_content"
+            android:layout_above="@id/img_cup"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <com.banker.framework.utils.HorizontalListView
+                android:id="@+id/localGameListV"
+                style="@style/WH_match_parent" 
+                android:visibility="invisible"/>
+            
+            <ImageView
+            android:id="@+id/imgV_shake"
+            style="@style/WH_wrap_content__match_parent"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/shake"
+            android:visibility="invisible" />
+            
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_centerDice"
+            style="@style/WH_match_parent___wrap_content"
+            android:layout_below="@id/lay_listV"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/img_centerDice1"
+                style="@style/WH_wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_centerDice2"
+                style="@style/WH_wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_centerDice3"
+                style="@style/WH_wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_centerDice4"
+                style="@style/WH_wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_centerDice5"
+                style="@style/WH_wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
